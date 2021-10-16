@@ -11,12 +11,13 @@ body {
     justify-content: center;
     width: 100%;
     height: 100vh;
-    background: linear-gradient(to bottom, #b8b9ca 10%, #abcfe6 40%);
+    background: linear-gradient(to bottom, #b8b9ca 10vmin, #abcfe6 40vmin, 69vmin, white 70vmin);
 }
 
 .neve {
     position: relative;
     top: 0vmin;
+    left: 0vmin;
     width: 25vmin;
     height: 26vmin;
     border-radius: 50%;
@@ -49,11 +50,31 @@ body {
 .neve::after {
     content: "";
     position: absolute;
-    top: 40vmin;
-    left: -60vmin;
-    transform: rotate(45deg);
-    width: 50vmin;
-    height: 45vmin;
-    background: linear-gradient(125deg, rgb(245, 242, 242) 5%, rgb(190, 189, 189) 8%, rgb(245, 242, 242) 20%, white 50%);
+    top: 26vmin;
+    left: 5.5vmin;
+    border-radius: 15% 15% 5% 5% ;
+    width: 15vmin;
+    height: 15vmin;
+    background: black;
+    box-shadow: 
+    0 -0.2vmin 0.1vmin 1vmin inset black,
+    0 1.5vmin 0.1vmin 0vmin red,
+    0 4.5vmin 0.1vmin -1vmin black,
+    7.5vmin 9.9vmin 0.1vmin -6.4vmin black,
+    -7.5vmin 9.9vmin 0.1vmin -6.4vmin black,
+    9.6vmin 9.9vmin 0.1vmin -6.4vmin black,
+    -9.6vmin 9.9vmin 0.1vmin -6.4vmin black;
     z-index: 10;
+}
+
+.neve::before {
+        content: "";
+        position: absolute;
+        top: 59vmin;
+        left: 5.5vmin;
+        border-radius: 15% 15% 5% 5% ;
+        width: 15vmin;
+        height: 2.5vmin;
+        background: red;
+        box-shadow: 2vmin 0 0 -0.2vmin rgb(185, 20, 20);
 }
