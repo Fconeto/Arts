@@ -1,0 +1,59 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to bottom, #b8b9ca 10%, #abcfe6 40%);
+}
+
+.neve {
+    position: relative;
+    top: 0vmin;
+    width: 25vmin;
+    height: 26vmin;
+    border-radius: 50%;
+    box-shadow:
+    1vmin 40vmin 0.1vmin -11.2vmin orange,
+    -3vmin 43vmin 0.1vmin -12.2vmin black,
+    -2vmin 43.5vmin 0.1vmin -12.2vmin black,
+    -1vmin 44vmin 0.1vmin -12.2vmin black,
+    -0vmin 44.5vmin 0.1vmin -12.2vmin black,
+    1vmin 44.5vmin 0.1vmin -12.2vmin black,
+    2vmin 44.5vmin 0.1vmin -12.2vmin black,
+    3vmin 44vmin 0.1vmin -12.2vmin black,
+    4vmin 43.5vmin 0.1vmin -12.2vmin black,
+    5vmin 43vmin 0.1vmin -12.2vmin black,
+
+    5vmin 37vmin 0.1vmin -11.5vmin black,
+    -3vmin 37vmin 0.1vmin -11.5vmin black,
+
+    1vmin 68vmin 0.1vmin -11.5vmin black,
+    1vmin 60vmin 0.1vmin -11.5vmin black,
+    1vmin 52vmin 0.1vmin -11.5vmin black,
+
+    2vmin 60vmin 0.1vmin 0vmin white,
+    1vmin 60vmin 0.1vmin 1vmin rgb(167, 162, 162),
+    1vmin 40vmin 0.1vmin -3vmin white,
+    0 40vmin 0.1vmin -2.5vmin rgb(167, 162, 162);
+    z-index: 100;
+}
+
+.neve::after {
+    content: "";
+    position: absolute;
+    top: 40vmin;
+    left: -60vmin;
+    transform: rotate(45deg);
+    width: 50vmin;
+    height: 45vmin;
+    background: linear-gradient(125deg, rgb(245, 242, 242) 5%, rgb(190, 189, 189) 8%, rgb(245, 242, 242) 20%, white 50%);
+    z-index: 10;
+}
