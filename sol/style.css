@@ -1,0 +1,116 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}   
+
+body {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    color: #935933, -1.9vmin 15.5vmin 0 -2.5vmin #f8cfa6,;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to bottom, #346193 60%, cyan );
+}
+
+.sol {
+    position: relative;
+    top: 10vmin;
+    width: 45vmin;
+    height: 45vmin;
+    border-radius: 50%;
+    background: radial-gradient(ellipse, rgb(231, 222, 141), yellow 55%, transparent 60%);
+    box-shadow: 0 0 0.1vmin 4.8vmin inset rgba(255, 255, 0, 0.26),
+    0 0 2vmin 5vmin rgba(212, 212, 54, 0.205),
+    0 0 2vmin 10vmin rgba(212, 212, 54, 0.105),
+    0 0 2vmin 15vmin rgba(212, 212, 54, 0.055);
+}
+
+.sol::after {
+    content: "";
+    position: absolute;
+    top: -150vmin;
+    width: 45vmin;
+    height: 45vmin;
+    border-radius: 50%;
+    animation-name: nuvem-1;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;  
+    
+}
+
+.sol::before {
+    content: "";
+    position: absolute;
+    top: -150vmin;
+    width: 45vmin;
+    height: 45vmin;
+    border-radius: 50%;
+    animation-name: nuvem-2;
+    animation-duration: 12s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;  
+}
+
+@keyframes nuvem-1 {
+    0% {
+        box-shadow: 
+        120vmin 140vmin 1vmin -12vmin rgb(255, 255, 255),
+        130vmin 130vmin 1vmin -12vmin rgb(255, 255, 255),
+        145vmin 140vmin 1vmin -12vmin rgb(255, 255, 255),
+        130vmin 145vmin 1vmin -12vmin rgb(255, 255, 255),
+        155vmin 140vmin 1vmin -12vmin rgb(255, 255, 255),
+        145vmin 150vmin 1vmin -12vmin rgb(255, 255, 255),
+        145vmin 130vmin 1vmin -12vmin rgb(255, 255, 255),
+        165vmin 140vmin 1vmin -12vmin rgb(255, 255, 255),
+        160vmin 145vmin 1vmin -12vmin rgb(255, 255, 255),
+        155vmin 130vmin 1vmin -12vmin rgb(255, 255, 255);
+    }
+
+    100% {
+        box-shadow: 
+    -170vmin 140vmin 1vmin -12vmin rgb(255, 255, 255),
+    -160vmin 130vmin 1vmin -12vmin rgb(255, 255, 255),
+    -145vmin 140vmin 1vmin -12vmin rgb(255, 255, 255),
+    -160vmin 145vmin 1vmin -12vmin rgb(255, 255, 255),
+    -135vmin 140vmin 1vmin -12vmin rgb(255, 255, 255),
+    -145vmin 150vmin 1vmin -12vmin rgb(255, 255, 255),
+    -145vmin 130vmin 1vmin -12vmin rgb(255, 255, 255),
+    -125vmin 140vmin 1vmin -12vmin rgb(255, 255, 255),
+    -130vmin 145vmin 1vmin -12vmin rgb(255, 255, 255),
+    -135vmin 130vmin 1vmin -12vmin rgb(255, 255, 255);
+    }
+}
+
+@keyframes nuvem-2 {
+    0% {
+        box-shadow: 
+        120vmin 190vmin 1vmin -12vmin rgb(255, 255, 255),
+        130vmin 180vmin 1vmin -12vmin rgb(255, 255, 255),
+        145vmin 190vmin 1vmin -12vmin rgb(255, 255, 255),
+        130vmin 195vmin 1vmin -12vmin rgb(255, 255, 255),
+        155vmin 190vmin 1vmin -12vmin rgb(255, 255, 255),
+        145vmin 200vmin 1vmin -12vmin rgb(255, 255, 255),
+        145vmin 180vmin 1vmin -12vmin rgb(255, 255, 255),
+        165vmin 190vmin 1vmin -12vmin rgb(255, 255, 255),
+        160vmin 195vmin 1vmin -12vmin rgb(255, 255, 255),
+        155vmin 180vmin 1vmin -12vmin rgb(255, 255, 255);
+    }
+
+    100% {
+        box-shadow: 
+    -180vmin 190vmin 1vmin -12vmin rgb(255, 255, 255),
+    -170vmin 180vmin 1vmin -12vmin rgb(255, 255, 255),
+    -155vmin 190vmin 1vmin -12vmin rgb(255, 255, 255),
+    -170vmin 195vmin 1vmin -12vmin rgb(255, 255, 255),
+    -145vmin 190vmin 1vmin -12vmin rgb(255, 255, 255),
+    -155vmin 200vmin 1vmin -12vmin rgb(255, 255, 255),
+    -155vmin 180vmin 1vmin -12vmin rgb(255, 255, 255),
+    -135vmin 190vmin 1vmin -12vmin rgb(255, 255, 255),
+    -140vmin 195vmin 1vmin -12vmin rgb(255, 255, 255),
+    -145vmin 180vmin 1vmin -12vmin rgb(255, 255, 255);
+    }
+}

@@ -1,0 +1,86 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 2.25vmin;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background: coral;
+}
+
+body::after {
+    content: "";
+    position: absolute;
+    display: flex;
+    top: 55vmin;
+    width: 35vmin;
+    height: 40vmin;
+    background: saddlebrown;
+    box-shadow: 0 5.5vmin 0 5vmin inset saddlebrown,
+    0 0 0 50vmin inset coral;
+}
+
+body::before {
+    content: "O Saci";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 40vmin;
+    width: 20vmin;
+    height: 5vmin;
+    border-radius: 8%;
+    background: seagreen;
+    color: white;
+    z-index: 10;
+    text-shadow: 0.1vmin 0.1vmin rgba(0, 0, 0, 0.493);
+    box-shadow: 0 -0.2vmin 1vmin 0.5vmin inset rgba(0, 0, 0, 0.322);
+}
+
+.stack {
+    position: relative;
+    top: 40vmin;
+    width: 20vmin;
+    height: 5vmin;
+}
+
+.stack::after {
+    content: "Dom Casmurro";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 5vmin;
+    width: 20vmin;
+    height: 5vmin;
+    border-radius: 8%;
+    background: #ceb002;
+    color: white;
+    text-shadow: 0.1vmin 0.1vmin rgba(0, 0, 0, 0.493);
+    box-shadow: 0 -0.2vmin 1vmin 0.5vmin inset rgba(0, 0, 0, 0.322);
+}
+
+
+.stack::before {
+    content: "Capitães da Areia";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 10vmin;
+    width: 20vmin;
+    height: 5vmin;
+    border-radius: 8%;
+    background: #2285bc;
+    color: white;
+    text-shadow: 0.1vmin 0.1vmin rgba(0, 0, 0, 0.493);
+    box-shadow: 0 -0.2vmin 1vmin 0.5vmin inset rgba(0, 0, 0, 0.322);
+}

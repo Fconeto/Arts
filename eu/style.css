@@ -1,0 +1,89 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    background: radial-gradient(circle, white, gray);
+}
+
+.cabeca {
+    display: flex;
+    position: relative;
+    top: 20vmin;
+    width: 34vmin;
+    height: 45vmin;
+    border-radius: 40% 40% 50% 50%;
+    background: linear-gradient(to right, #e9b6a3 10%, #cf967f 45%, #c98f78 60%, #bd8874 80%);
+    box-shadow: 0 4vmin 0 -2.5vmin #c48f7a;
+    justify-content: center;
+}
+
+.olhos {
+    display: flex;
+    position: relative;
+}
+
+.olhos div{
+    position: absolute;
+    top: 20vmin;
+    width: 5vmin;
+    height: 3vmin;
+    border-radius: 50%;
+    background: white;
+    box-shadow: -1vmin 0 0 0.6vmin inset white,
+    1vmin 0 0 0.6vmin inset white, 
+    0 0 0 5vmin inset black,
+    0 -0.5vmin 1vmin 1vmin rgba(54, 44, 35, 0.205);
+}
+
+.olho-esq {
+    left: -8vmin;
+}
+
+.olho-dir {
+    left: 8vmin;
+}
+
+.nariz {
+    position: relative;
+    top: 19vmin;
+    width: 5vmin;
+    height: 10vmin;
+    border-radius: 50% 50% 20% 20%;
+    background: linear-gradient(to right, #c48f7a, #b98069);
+}
+
+.nariz::before {
+    content: "";
+    position: absolute;
+    top: 6.5vmin;
+    left: -0.5vmin;
+    width: 6vmin;
+    height: 5vmin;
+    border-radius: 50%;
+    background: linear-gradient(to right, #c58e79, #b98069);
+    box-shadow: 0 -2vmin 1.2vmin 1.6vmin inset  #c58e79,
+    0 2vmin 1.2vmin 2vmin inset #ddb9aa  ;
+}
+
+.nariz::after {
+    content: "";
+    position: absolute;
+    top: 0.5vmin;
+    width: 5.2vmin;
+    height: 5vmin;
+    border-radius: 50%;
+    /* background: linear-gradient(to right, #c48f7a, #b98069); */
+    background: black;
+
+    box-shadow: -1.2vmin 6.9vmin 0 -1.8vmin black,
+    1.2vmin 6.9vmin 0 -1.8vmin black ;
+}
