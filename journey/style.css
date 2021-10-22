@@ -1,0 +1,25 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: orange;
+}
+
+.caminho {
+    position: relative;
+    width: 50vmin;
+    height: 70vmin;
+    background: linear-gradient(to right, black 5%, white 5%, 10%, black 10%, 40%, yellow 40%, 45%, black 45%, 55%, yellow 55%, 60%, black 60%, 90%, white 90%, 95%, black 95%);
+}
